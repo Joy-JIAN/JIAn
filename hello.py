@@ -1,8 +1,11 @@
 import sys
+
+
 def hello(name):
-    print("hello"+name)
-name=sys.argv
-if len(name) <2:
-    print("wrong")
-else: 
-    print ("name")
+    print("hello + " + name)
+
+
+if len(sys.argv) < 2:
+    print("wrong,please again")
+else:
+    hello(sys.argv[1])
